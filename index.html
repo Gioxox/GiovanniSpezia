@@ -1,67 +1,238 @@
-<html>
-    <head>
-        <title>Gioxox</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="img/logo.png">
-    </head>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>⚡️ | Spezia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-    <body>
-        <div id="navbar">
-            <a href="#default" id="logo">Gioxox</a>
-            <div id="navbar-right">
-                <a class="active" href="#home">Home</a>
-                <a href="staffexp.html">Staff Expience</a>
-                <a href="contact.html">Contact</a>
-            </div>
+</head>
+<body>
+
+<div class="overflow-h">
+
+  <header class="header">
+    <div class="header__content">
+      <a class="header__logo"></a>
+      <ul class="header__menu">
+        <li><a href="#home" class="underline">Home</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#obiettivi">Obiettivi</a></li>
+        <li><a href="#coralmc">CoralMC</a></li>
+        <li><a href="#social">SocialNetwork</a></li>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
         </div>
-
-        <div id="mySidenav" class="sidenav">
-            <a href="https://www.instagram.com/gios10_/" id="instagram">Instagram</a>
-            <a href="https://www.github.com/Gioxox/" id="github">Github</a>
-            <a href="https://discord.gg/c2ZD3jCxvM" id="discord">Discord</a>
-            <a href="https://youtube.com/c/Gioxox21" id="youtube">YouTube</a>
-        </div>
-
-        <br><br><br><br>
-        <div class="main">
-            <h2>Chi sono?</h2>
-            <h5>Milano, Agosto 10</h5>
-            <p>
-                Un ragazzo di 16 anni. <br>
-                Sono un appassionato di informatica, mi piace viaggiare nel mondo. <br>
-                Mi piace programmare nel web, conosco HTML, CSS e Javascript. <br>
-                Sto studiando C++ e nel frattempo inizio ad entrare nel mondo di Java. <br>
-                Sono uno studente, che frequanta un indirizzo Informatico.
-            </p>
-            <br>
-            <div class="container">
-                <img src="./img/avatar.png" class="post">
-            </div>
+      </ul>
+      <div class="header__quick">
+        <a class="button-small" href="#contact">Contatti</a>
+          <div class="icon-hamburger">
+            <span></span>
+            <span></span>
           </div>
-        </div>
-        
-        <footer>
-            <a class="trans-color-text"> Gioxox21@yahoo.com </a>
-            <br>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="grid logo" id="home">
+    <div class="col-50 pt-4 sma-text-center">
+      <h1>Giovanni Spezia</h1>  
+    </div>
+    <div class="col-50 p-3 relative">
+      <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#1d8a92" d="M32.3,-30.7C45.9,-27.1,63.6,-20.7,70.2,-8.6C76.8,3.5,72.4,21.3,63.2,35.8C54,50.3,40.2,61.4,27,60C13.8,58.7,1.3,44.8,-14.1,39.1C-29.5,33.3,-47.7,35.7,-58.1,28.4C-68.5,21,-71.2,4,-70.2,-14.3C-69.3,-32.6,-64.8,-52.2,-52.5,-56C-40.2,-59.8,-20.1,-47.8,-5.4,-41.4C9.4,-35,18.8,-34.3,32.3,-30.7Z" transform="translate(100 100)" />
+      </svg>
+      <img src="./img/logo.jpg" class="img-res img-round" alt="">
+    </div>
+  </div>
+
+  <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('./img/tastiera.jpg');" id="studio">
+    <div class="cover__content">
+      <h1> Science Technology Istitute </h1>
+      <h2 class="font-normal"> Scuola di Informatica</h2>
+    </div>
+  </div>
+
+  <div class="grid grid--center" id="obiettivi">
+    <div class="col-70 text-center pt-4 pb-3">
+      <h2>Obiettivi</h2>
+      <p>Alcuni dei miei obiettivi che mi piacerebbe raggiugere</p>
+    </div>
+    <div class="col-33">
+      <div class="cover round mb-2" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('./img/code.jpg');">
+        <h3> Programming Languages </h3>  
+        <p> Imparare questi linguaggi di programmazione: HTML, CSS, JS, PHP, C++ e Java </p>
+      </div>
+    </div>
+    <div class="col-33">
+      <div class="cover round mb-2" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('./img/inglese.jpg');">
+        <h3> English </h3>
+        <p> Vorrei arrivare a conoscere l'inglese molto bene. Mi piacerebbe essere un livello C1. </p>
+      </div>
+    </div>
+    <div class="col-33">
+      <div class="cover round mb-2" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('./img/università.jpg');">
+        <h3> Università </h3>
+        <p> Sicuramente non mi acconterò di un semplice diploma, conquisterò la laurea per essere pronto ad una grande azienda. </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="grid logo" id="coralmc">
+    <div class="col-50 p-3 relative">
+      <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#1d8a92" d="M32.3,-30.7C45.9,-27.1,63.6,-20.7,70.2,-8.6C76.8,3.5,72.4,21.3,63.2,35.8C54,50.3,40.2,61.4,27,60C13.8,58.7,1.3,44.8,-14.1,39.1C-29.5,33.3,-47.7,35.7,-58.1,28.4C-68.5,21,-71.2,4,-70.2,-14.3C-69.3,-32.6,-64.8,-52.2,-52.5,-56C-40.2,-59.8,-20.1,-47.8,-5.4,-41.4C9.4,-35,18.8,-34.3,32.3,-30.7Z" transform="translate(100 100)" />
+      </svg>
+      <img src="./img/coralmc.jpg" class="img-res img-round" alt="">
+    </div>
+    <div class="col-50 p-3 sma-text-center">
+      <h2 class="text-1">CoralMC Network</h2>
+      <h3>〢Moderatore〢</h3>
+      <p>Sono un Moderatore nel primo Server di Minecraft ITALIA</p>
+      <a href="https://www.minecraft-italia.it/server/coralmc" class="button">Scopri di più</a>
+    </div>
+  </div>
+
+
+  <div class="grid grid--center text-center" id="social">
+    <div class="col-70 text-center pt-4 pb-3">
+      <h2>Social Network</h2>
+      <p>Puoi trovare alcuni dei miei social network</p>
+    </div>
+    <div class="col-33 mb-3">
+      <img class="img-res img-small round" src="./img/github.jpg" alt="">
+      <h4>GitHub</h4>
+      <a href="https://github.com/Gioxox" class="button">Clicca Qui</a>
+    </div>
+    <div class="col-33 mb-3">
+      <img class="img-res img-small round" src="./img/paypal.jpg" alt="">
+      <h4>PayPal</h4>
+      <a href="https://www.paypal.me/Gioxox" class="button">Clicca Qui</a>
+    </div>
+    <div class="col-33 mb-3">
+      <img class="img-res img-small round" src="./img/instagram.jpg" alt="">
+      <h4>Instagram</h4>
+      <a href="https://www.instagram.com/gios10_/" class="button">Clicca Qui</a>
+    </div>
+  </div>
+
+
+  <div class="grid logo">
     
-            <div class="social-cont">        
-            <ul class="social-list">
+    <div class="col-50 p-3 sma-text-center" id="contact">
+      <h2 class="text-1">Contattami</h2>
+      <h3>Puoi contattarmi per qualsiasi cosa!</h3>
+      <p> 
+        <strong>E-Mail:</strong>  Gioxox21@yahoo.com <br>
+        <strong>Telegram:</strong> @Gioxox <br>
+      </p>
+      <a href="https://t.me/Gioxox" class="button">Contattami ora</a>
+    </div>
+    <div class="col-50 p-3 relative">
+      <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#1d8a92" d="M32.3,-30.7C45.9,-27.1,63.6,-20.7,70.2,-8.6C76.8,3.5,72.4,21.3,63.2,35.8C54,50.3,40.2,61.4,27,60C13.8,58.7,1.3,44.8,-14.1,39.1C-29.5,33.3,-47.7,35.7,-58.1,28.4C-68.5,21,-71.2,4,-70.2,-14.3C-69.3,-32.6,-64.8,-52.2,-52.5,-56C-40.2,-59.8,-20.1,-47.8,-5.4,-41.4C9.4,-35,18.8,-34.3,32.3,-30.7Z" transform="translate(100 100)" />
+      </svg>
+      <img src="./img/telegram.jpg" class="img-res img-round" alt="">
+    </div>
+  </div>
+
+
+  <div class="spacer"></div>
+
+
+
+
+  <footer class="footer pt-4 pb-4 mt-4">
+    <div class="grid">
+      <div class="col-50 mt-2">
+        <h3>Chi sono</h3>
+        <p>
+          Sono un giovane programmatore, nato il 2006. <br>
+          Mi metto in competizione facilmente e amo mettermi <br>
+          in mostra con i miei talenti. <br>
+          Sono un appassionato del mondo dell'informatica.
+
+        </p>
+      </div>
+      <div class="col-40 mt-2">
+        <h3>Link Utili</h3>
+        <ul>
+          <li><a href="https://discord.gg/c2ZD3jCxvM" class="text-social">Discord</a></li>
+          <br><br>
+          <li><a href="https://www.instagram.com/gios10_/" class="text-social">Instagram</a></li>
+          <br><br>
+          <li><a href="https://youtube.com/c/Gioxox21" class="text-social">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="col-40 mt-2">
+        <h3>Supportaci</h3>
+        <ul>
+          <a href="https://www.paypal.me/Gioxox" class="button-ciano">Donazione</a>
+        </ul>
+      </div>
+      
+    </div>
+  </footer>
+  <p class="footer-bottom">
+    Giovanni Spezia - Personal Site - <a href="#home">© Privacy Policy</a>
+  </p>
+
+</div>
+
+
+   <script> 
+    let item = document.querySelector('.icon-hamburger');
+    item.addEventListener("click", function() {
+      document.body.classList.toggle('menu-open');
+    });
+
+
+   let items = document.querySelectorAll('.header__menu a');
+   items.forEach((item) => {
+     item.addEventListener("click", function() {
+        //remove 
+        items.forEach((item) => {
+          item.classList.remove('underline');
+        });
+        //add
+        item.classList.add('underline');
+
+        // close menu mobile
+        document.body.classList.remove('menu-open');
+     });
+   });
+
+  let logo_imgs = document.querySelectorAll('.logo img');
+
+  window.addEventListener('scroll' , function(){
+
+      let win_pos = window.pageYOffset;
+      logo_imgs.forEach((logo_img) => {
+
+        let element_rect = logo_img.getBoundingClientRect();
+
+        if(win_pos > element_rect.top ){        
+          logo_img.style.transform = "translateY(" +  element_rect.top  * - 1  * .13 + "px)";
+        }
+ 
+      });
     
-            <li>
-                <a href="#"><img src="img/github.png"  title="GitHub"></a>
-            </li>
-            <li>
-                <a href="#"><img src="img/instagram.png" title="Instagram"></a>
-            </li>
-    
-            </ul>
-            <div class="floatstop"></div>
-            </div>
-    
-            <br>
-           <div class="credits">
-           <a target="_blank" href="#"><img width="100" src="img/logo.png" title=""></a>  
-            </div>
-        </footer>
-    </body>
+  });
+
+  window.onscroll = function() {myFunction()};
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+
+   </script>
+
+</body>
 </html>
